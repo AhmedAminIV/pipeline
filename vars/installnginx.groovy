@@ -10,7 +10,6 @@ def call(){
             stage('enable_firewall') { 
                 steps {
                     sh "sudo ufw allow 'Nginx HTTP'"
-                    sh 'sudo rm /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default /var/www/html/index.nginx-debian.html'
                 }
             }
             stage('Test') { 
