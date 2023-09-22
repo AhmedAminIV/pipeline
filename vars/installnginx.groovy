@@ -15,7 +15,7 @@ def call(){
             }
             stage('Test') { 
                 steps {
-                    sh 'sudo systemctl nginx status' 
+                    sh 'sudo service nginx status' 
                 }
             }
         }
